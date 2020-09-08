@@ -1,7 +1,7 @@
 version: '2'
 services:
   holodecka:
-    image: holodeck
+    image: neelp1212/holodeck:latest
     container_name: holodecka
     ports:
       - 8081:8081
@@ -12,7 +12,7 @@ services:
       - AXIS_PORT=8081
       - ROLE=sender
   holodeckb:
-    image: holodeck
+    image: neelp1212/holodeck:latest
     container_name: holodeckb
     ports:
       - 8082:8082
